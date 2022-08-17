@@ -1,0 +1,240 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  :root {
+    --primary_color: rgb(247, 0, 0);
+    --secondary_color: #0c1825;
+    --black_color: #0f0f0f;
+    --white_color: #fff;
+    --green_color:rgb(6, 48, 6);
+    --gold_color:rgb(153, 101, 21);
+  }
+  html {
+    background-color: none;
+    color: var(--white_color);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: "Inter";
+    text-rendering: optimizeLegibility;
+  }
+  
+.clearfix {
+    zoom: 1;
+}
+  
+.logo{
+  position: absolute;
+  left: 2rem;
+  top: 1rem;
+  z-index: 5;
+}
+
+nav {
+  position: absolute;
+    width: 100%;
+    min-height: 4.5rem;
+    background-color: var(--green_color);
+}
+
+nav ul {
+    position: relative;
+    text-align: center;
+}
+
+.main-nav {
+    top: 1.5rem;
+}
+
+.main-nav li {
+    display: inline-block;
+    color: var(--white_color);
+    font-family: "Inter";
+    font-size: .9rem;
+    font-weight: 200;
+    line-height: 18px;
+    text-align: right;
+    margin: 0 0 0 2.75rem;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    font-size: 80%;
+    padding: 7.5px;
+    color: var(--white_color);
+    transition: color 0.2s;
+    border-bottom: 1px solid var(--green_color);
+}
+
+.main-nav li a:hover,
+.main-nav li a :active {
+    color: var(--white_color);
+    color: var(--white_color);
+}
+
+
+  .header {
+      background-color: var(--green_color);
+    background-position: center;
+    height: auto;
+    min-height: 100vh;
+    height: auto;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    background-size: cover;
+  }
+  .header_content{
+    display: flex;
+    margin:0 2rem;
+    padding-top: 5rem;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+  .intro_text{
+    margin-top: 8rem;
+    flex: 1;
+  }
+  
+  
+.image_composition {
+    padding: 1rem;
+    flex: 1;
+    width: 80%;
+    text-align: center;
+
+}
+
+.image_composition figure {
+  margin: 0;
+}
+.image_composition figure img {
+    width: 70%;
+}
+
+.header_img_horizontal {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+.cta{
+    text-decoration: none;
+    color: var(--green_color);
+    background-color: white;
+    border-radius: 500px;
+    padding: 1rem;
+}
+
+.section_affiliations h2 {
+    color: var(--green_color);
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.affiliations_imgs{
+    display: flex;
+    margin: 1rem;
+    
+}
+.affiliations_imgs *{
+    width: 30%;
+}
+.section_founder{
+  display: flex;
+  background-color: var(--green_color);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+}
+.section_founder p{
+  font-size: .8rem;
+}
+.about_founder{
+flex: 1;
+  padding: 2rem;
+
+}
+.founder_image{
+  flex: 1;
+  background-color: var(--white_color);
+}
+.about_themountgilead{
+flex: 1;
+  padding: 2rem;
+
+}
+.medical_service{
+  color: var(--green_color);
+  display: flex;
+  /* transform: translateY(-1rem); */
+}
+.service_des{
+  padding: 1rem;
+  /* padding-bottom: 0; */
+  flex: 1;
+}
+.service_img {
+  flex: 1;
+}
+.service_img img{
+  width: 100%;
+  height: auto;
+
+}
+  @media only screen and (max-width:750px) {
+
+    .image_composition {
+      width: 100%;
+  
+  }
+  
+  .intro_text{
+    margin-top: 1rem;
+    flex: 1;
+  }
+  
+  
+  .medical_service{
+    flex-direction: column;
+  }
+  .affiliations_imgs{
+    flex-direction: column;
+    align-items: center;
+  }
+  .affiliations_imgs * img{
+    width: 80%;
+    margin-bottom: 2rem;
+    margin-left: 10%;
+}
+.section_founder{
+  flex-direction: column;
+}
+
+.section_services :nth-child(odd) {
+    flex-direction: column-reverse;
+
+}
+    .header_content{
+      padding-top: 5rem;
+        flex-direction: column-reverse;
+      }
+  }
+
+    
+  
+  @media only screen and (max-width:500px) {
+
+    nav ul {
+      display: none;
+  }
+  
+  }
+
+    
+  
+  

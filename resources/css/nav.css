@@ -1,0 +1,108 @@
+
+
+  .menu_bar{
+    display: none;
+    cursor: pointer;
+    z-index: 300;
+  }
+  .menu_bar span{
+    width: 2rem;
+    height: 1px;
+    background-color: var(--white_color);
+    position: absolute;
+    top: 2rem;
+    z-index: 300;
+    right: 1.5rem;
+    transition: all .5s ease-in-out;
+
+}
+
+.menu_bar span:before,
+.menu_bar span:after {
+    z-index: 300;
+    content: " ";
+    position: absolute;
+    width: 3rem;
+    height: 1px;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+    background-color:var(--white_color) !important;
+}
+
+.menu_bar span:before {
+    transform: translateY(-.8rem);
+    background-color: white;
+}
+
+.menu_bar span:after {
+    transform: translateY(.8rem);
+    background-color: white;
+}
+
+.menu_bar.menuOpen span {
+    transform: translateX(-2.5rem);
+    background-color: transparent;
+    box-shadow: none;
+    position: fixed;
+}
+
+.menu_bar.menuOpen span:before {
+    transform: rotate(45deg) translate(1.75rem, -1.75rem);
+    width: 3rem;
+    position: fixed;
+    background-color: var(--primary_color);
+}
+
+.menu_bar.menuOpen span:after {
+    transform: rotate(-45deg) translate(1.75rem, 1.75rem);
+    width: 3rem;
+    position: fixed;
+    background-color: var(--primary_color);
+}
+.menu_bar_contents{
+    position: absolute;
+    display: solid;    
+    transition: all .5s ease-in-out;
+    height: 100vh;
+    width: 100vw;
+    transform: translateX(-100%);
+    margin-top: 4.5rem;
+    background-color: var(--green_color);
+}
+#menu_items{
+    top: 10rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#menu_items li {
+    width: fit-content;
+    margin: 2rem auto;
+    list-style: none;
+}
+#menu_items li a {
+
+    color: var(--white_color);
+    z-index: 3;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#menu_items li:last-child {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--white_color);
+}
+@media only screen and (max-width:700px) {
+    .menu_bar {
+        display: block;
+        opacity: 1;
+    }
+    
+    .menu_bar_contents{
+        display: solid;
+        position: fixed;
+    }
+    
+  }
