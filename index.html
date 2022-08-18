@@ -16,7 +16,10 @@
       <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;900&display=swap"
         rel="stylesheet"
-      />
+      /> <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script><script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,6 +27,8 @@
     <link rel="stylesheet" href="./resources/css/styles.css" />
     <link rel="stylesheet" href="./resources/css/footer.css">
     <script defer src="./resources/js/index.js"></script>
+    <script defer src="./resources/js/map.js"></script>
+
 
     <title>The Mount Gilead
 
@@ -138,7 +143,7 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, a deserunt. Nemo cum quam molestias asperiores nisi,
            repellat mollitia ab, voluptate voluptatum iusto cumque quibusdam repellendus, deserunt doloribus minus iste!</p>
       </div>
-      <div class="founder_image"><img src="" alt="Dr Alani. W. Akande"></div>
+      <div class="founder_image"><img src="./resources/img/services/medical chair.webp" alt="Dr Alani. W. Akande"></div>
       <div class="about_themountgilead">
         <h2>The Mount Gilead</h2><br>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aspernatur aliquam velit corrupti maiores nam, numquam
@@ -152,13 +157,13 @@
         <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloribus, impedit repudiandae autem itaque voluptatum iure error
            ipsa nesciunt facere exercitationem voluptate expedita libero placeat necessitatibus saepe eum quis. Placeat.</P></div>
         <div class="service_img">
-          <img src="./resources/img/services/test.png" alt="Medical Service">
+          <img src="./resources/img/services/medical_lab.webp" alt="Medical Service">
         </div>
       </div>
       
       <div class="medical_service">
         <div class="service_img">
-          <img src="./resources/img/services/test.png" alt="Medical Service">
+          <img src="./resources/img/services/medical ultrasound.webp" alt="Medical Service">
         </div>
         <div class="service_des">
           <h3>GYNAECOLOGY</h3> 
@@ -171,12 +176,12 @@
           <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloribus, impedit repudiandae autem itaque voluptatum iure error
             ipsa nesciunt facere exercitationem voluptate expedita libero placeat necessitatibus saepe eum quis. Placeat.</P></div>
             <div class="service_img">
-              <img src="./resources/img/services/test.png" alt="Medical Service">
+              <img src="./resources/img/services/medical chair.webp" alt="Medical Service">
             </div>
       </div>
       <div class="medical_service">
         <div class="service_img">
-          <img src="./resources/img/services/test.png" alt="Medical Service">
+          <img src="./resources/img/services/doctor_patient.jpg" alt="Medical Service">
         </div>
         <div class="service_des">
           <h3>INTERNAL MEDICINE</h3> 
@@ -189,12 +194,12 @@
         <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloribus, impedit repudiandae autem itaque voluptatum iure error
            ipsa nesciunt facere exercitationem voluptate expedita libero placeat necessitatibus saepe eum quis. Placeat.</P></div>
         <div class="service_img">
-          <img src="./resources/img/services/test.png" alt="Medical Service">
+          <img src="./resources/img/services/analytical_doctor.jpg" alt="Medical Service">
         </div>
       </div>
       <div class="medical_service">
         <div class="service_img">
-          <img src="./resources/img/services/test.png" alt="Medical Service">
+          <img src="./resources/img/services/nurse.jpg" alt="Medical Service">
         </div>
         <div class="service_des">
           <h3>NEPHROLOGY</h3> 
@@ -204,6 +209,10 @@
     </section>
     <section class="section_meetourteam">
 
+    </section>
+    <section class="section_google_maps">
+      <div id="map"></div>
+      <div class="map_description"></div>
     </section>
     
     <footer>

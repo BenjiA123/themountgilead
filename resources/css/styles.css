@@ -66,7 +66,6 @@ nav ul {
 .main-nav li a:link,
 .main-nav li a:visited {
     text-decoration: none;
-    font-size: 80%;
     padding: 7.5px;
     color: var(--white_color);
     transition: color 0.2s;
@@ -75,7 +74,6 @@ nav ul {
 
 .main-nav li a:hover,
 .main-nav li a :active {
-    color: var(--white_color);
     color: var(--white_color);
 }
 
@@ -91,7 +89,7 @@ nav ul {
   }
   .header_content{
     display: flex;
-    margin:0 2rem;
+    margin:0 5rem;
     padding-top: 5rem;
     /* align-items: center; */
     /* justify-content: center; */
@@ -100,6 +98,12 @@ nav ul {
   .intro_text{
     margin-top: 8rem;
     flex: 1;
+  }
+  .intro_text h1{
+    font-size: 3.5rem;
+  }
+  .intro_text p{
+    font-size: 1rem;
   }
   
   
@@ -148,7 +152,7 @@ nav ul {
 .section_founder{
   display: flex;
   background-color: var(--green_color);
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
 
 }
 .section_founder p{
@@ -163,6 +167,10 @@ flex: 1;
   flex: 1;
   background-color: var(--white_color);
 }
+.founder_image img{
+  width: 100%;
+
+}
 .about_themountgilead{
 flex: 1;
   padding: 2rem;
@@ -174,9 +182,21 @@ flex: 1;
   /* transform: translateY(-1rem); */
 }
 .service_des{
-  padding: 1rem;
-  /* padding-bottom: 0; */
   flex: 1;
+  position: relative;
+}
+
+.service_des h3 {
+  color: var(--green_color);
+  margin: 2rem;
+  margin-bottom: 0rem;
+}
+
+.service_des p {
+  color: rgba(54, 54, 55, 1);
+  font-size: 0.85rem;
+  margin: 2rem;
+  margin-top: 0;
 }
 .service_img {
   flex: 1;
@@ -197,8 +217,6 @@ flex: 1;
     margin-top: 1rem;
     flex: 1;
   }
-  
-  
   .medical_service{
     flex-direction: column;
   }
@@ -221,6 +239,7 @@ flex: 1;
 }
     .header_content{
       padding-top: 5rem;
+      margin: 0rem 2rem;
         flex-direction: column-reverse;
       }
   }
