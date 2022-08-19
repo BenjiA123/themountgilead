@@ -40,6 +40,7 @@ nav {
   position: absolute;
     width: 100%;
     min-height: 4.5rem;
+    top: 0;
     background-color: var(--green_color);
 }
 
@@ -81,9 +82,8 @@ nav ul {
   .header {
       background-color: var(--green_color);
     background-position: center;
-    height: auto;
-    min-height: 100vh;
-    height: auto;
+    padding-bottom: 5rem;
+    height: fit-content;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     background-size: cover;
   }
@@ -129,10 +129,12 @@ nav ul {
 }
 .cta{
     text-decoration: none;
-    color: var(--green_color);
+    color: var(--green_color) !important;
     background-color: white;
     border-radius: 500px;
-    padding: 1rem;
+    padding: 1rem !important;
+    text-transform: uppercase;
+    font-weight: 800;
 }
 
 .section_affiliations h2 {
@@ -204,6 +206,9 @@ flex: 1;
 .service_img img{
   width: 100%;
   height: auto;
+  opacity: .7;
+  background-color: black;
+  
 
 }
   @media only screen and (max-width:750px) {
